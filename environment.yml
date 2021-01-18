@@ -4,4 +4,5 @@ channels:
 dependencies:
   - numpy
   - matplotlib
-  - dynasaur
+  - pip:
+    - dynasaur
