@@ -1,0 +1,24 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.5.14 - 14Feb2018 -64bit-Window
+$# Created on Nov-01-2019 (20:37:22)
+open keyword "M:\VSI-P\100_Lecture\W 333.009 VU Applied Simulation in the Vehicle Safety\020_Lecture\2019_W\01_Introduction_Examples\02_Example_Battery_Stack\03_Solid_Mesh\Li_Ion_Cell_Stack_Impactor_Solid_Start_Test.k"
+Message 1
+save keywordoutversion 9
+Message 0
+modelcheck checkgeneral
+selectentity getalllabel
+selectentity getalllabel
+selectentity getalllabel
+selectentity getalllabel
+modelcheck checkgeneral
+selectentity getalllabel
+selectentity getalllabel
+selectentity getalllabel
+selectentity getalllabel
+inipene contactoff
+selectentity getalllabel
+edge
+inipene savestate
+inipene contactoff
+genselect clear
+inipene contactoff
+genselect clear

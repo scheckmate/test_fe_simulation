@@ -1,0 +1,46 @@
+ License option : check network license only
+      Date: 11/01/2019      Time: 20:39:23  
+
+     ___________________________________________________
+     |                                                 |
+     |  Livermore  Software  Technology  Corporation   |
+     |                                                 |
+     |  7374 Las Positas Road                          |
+     |  Livermore, CA 94551                            |
+     |  Tel: (925) 449-2500  Fax: (925) 449-2507       |
+     |  www.lstc.com                                   |
+     |_________________________________________________|
+     |                                                 |
+     |  LS-DYNA, A Program for Nonlinear Dynamic       |
+     |  Analysis of Structures in Three Dimensions     |
+     |  Version : smp d R10.1.0   Date: 01/12/2018     |
+     |  Revision: 123264          Time: 16:34:46       |
+     |                                                 |
+     |  Features enabled in this version:              |
+     |    Shared Memory Parallel                       |
+     |    CESE CHEMISTRY EM ICFD STOCHASTIC_PARTICLES  |
+     |    FFTW (multi-dimensional FFTW Library)        |
+     |    ARPACK (nonsymmetric eigensolver library)    |
+     |    ANSYS Database format                        |
+     |    NSYS License (ANSYS145)                      |
+     |                                                 |
+     |  Licensed to: Technische Universitaet Graz      |
+     |  Issued by  : dynamore_10252019                 |
+     |                                                 |
+     |  Platform   : WINDOWS X64                       |
+     |  OS Level   : Windows 7/8/10 & Srv 2008/2012 R2 |
+     |  Compiler   : Intel Fortran 13.1 & MSVC++ 2010  |
+     |  Hostname   : VSI-NB-149                        |
+     |  Precision  : Double precision (I8R8)           |
+     |  SVN Version: 122905                            |
+     |                                                 |
+     |  Unauthorized use infringes LSTC copyrights     |
+     |_________________________________________________|
+
+ 
+ *** Error 70004 (OTH+4)
+     invalid option on the command line:
+ 3
+ 
+
+E r r o r   t e r m i n a t i o n

@@ -1,0 +1,198 @@
+[{
+		"UNIT": {
+			"time": "ms",
+			"length": "mm",
+			"weight": "kg"
+		}
+	},
+	{
+		"DATA VISUALIZATION": [{
+				"name": "Disp_z",
+				"part_of": "CUBE",
+				"x": {
+					"type": "NODE",
+					"ID": "moving_node",
+					"array": ["(0, time)"]
+				},
+				"y": {
+					"type": "NODE",
+					"ID": "moving_node",
+					"array": ["(0, z_displacement)"]
+				}
+			},
+			
+			{
+				"name": "Force_Crosssection",
+				"part_of": "CUBE",
+				"x": {
+					"type": "CROSS_SECTION",
+					"ID": "upper_surface",
+					"array": ["(0, time)"]
+				},
+				"y": {
+					"type": "CROSS_SECTION",
+					"ID": "upper_surface",
+					"array": ["(0, z_force)"]
+				}
+			},
+			{
+				"name": "Area_Crosssection",
+				"part_of": "CUBE",
+				"x": {
+					"type": "CROSS_SECTION",
+					"ID": "upper_surface",
+					"array": ["(0, time)"]
+				},
+				"y": {
+					"type": "CROSS_SECTION",
+					"ID": "upper_surface",
+					"array": ["(0, area)"]
+				}
+			},
+			{
+				"name": "Timestep",
+				"part_of": "MODEL",
+				"y": {
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time_step)"]
+				},
+				"x": {
+					"type": "ENERGY_GLOBAL",
+					"ID": "Model",
+					"array": ["(0, time)"]
+				}
+			},
+			{
+                "name": "Strain",
+                "part_of": "CUBE",
+                "y": {
+                    "function": {
+                        "name": "stress_strain_time_history",
+                        "param": {
+                            "object_data": {
+                                "type": "OBJECT",
+                                "ID": "cube",
+                                "strain_stress": "Strain"
+                            },
+                            "integration_point": "Max",
+                            "selection_tension_compression": "Overall",
+                            "percentile": 100, 
+                            "interpolation": "linear"
+                        }
+                    }
+                },
+                "x": {
+                    "function": {
+                        "name": "object_time",
+                        "param": {
+                            "object_data": {
+                                "type": "OBJECT",
+                                "ID": "cube",
+                                "strain_stress": "Strain"
+                            }
+                        }
+                    }
+                }
+			},
+			{
+			"name": "Stress",
+			"part_of": "CUBE",
+			"y": {
+				"function": {
+					"name": "stress_strain_time_history",
+					"param": {
+						"object_data": {
+							"type": "OBJECT",
+							"ID": "cube",
+							"strain_stress": "Stress"
+						},
+						"integration_point": "Max",
+						"selection_tension_compression": "Overall",
+						"percentile": 100, 
+						"interpolation": "linear"
+					}
+				}
+			},
+			"x": {
+				"function": {
+					"name": "object_time",
+					"param": {
+						"object_data": {
+							"type": "OBJECT",
+							"ID": "cube",
+							"strain_stress": "Stress"
+						}
+					}
+				}
+			}
+		}
+					
+			
+
+		]
+	},
+	{
+		"CRITERIA": [
+
+			{
+				"name": "Timestep_Max",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "max",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, time_step)"]
+						},
+						"time": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, time)"]
+						}
+					}
+				}
+			},
+			{
+				"name": "Timestep_Min",
+				"type_of_criteria": "energy",
+				"part_of": "MODEL",
+				"function": {
+					"name": "min",
+					"param": {
+						"data_vector": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, time_step)"]
+						},
+						"time": {
+							"type": "ENERGY_GLOBAL",
+							"ID": "Model",
+							"array": ["(0, time)"]
+						}
+					}
+				}
+			},
+			{
+                "name": "Cube_Stress_Max",
+                "type_of_criteria" : "injury",
+                "part_of" : "CUBE",
+                "function": {
+                    "name": "stress_strain_part_max",
+                    "param": {
+                        "object_data":{
+                            "type" : "OBJECT", 
+                            "ID" : "cube", 
+                            "strain_stress": "Stress"
+                        },
+                        "integration_point": "Mean",
+                        "selection_tension_compression": "Overall",
+						"nr_largest_elements": 1
+                    }
+                }
+            }
+		]
+	}
+]

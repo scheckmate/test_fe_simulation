@@ -1,0 +1,1 @@
+"C:\Program Files\LSTC\LS-DYNA\ls-dyna_smp_d_R10.1_winx64_ifort131.exe" i=M:\VSI-P\100_Lecture\W 333.009 VU Applied Simulation in the Vehicle Safety\020_Lecture\2019_W\01_Introduction_Examples\02_Example_Battery_Stack\03_Solid_Mesh\Li_Ion_Cell_Stack_Impactor_Solid_Start_Test.k ncpu=8 memory=20m > lsrun.out.txt 2>&1

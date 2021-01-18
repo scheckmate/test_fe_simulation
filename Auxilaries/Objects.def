@@ -1,0 +1,8 @@
+{
+	"OBJECTS": [
+			{"type": "ENERGY_GLOBAL", "name": "Model", "id": [0]},
+			{"type": "NODE", "name": "moving_node", "id": [6]},
+			{"type": "CROSS_SECTION", "name": "upper_surface", "id": [1]},
+			{"type": "OBJECT", "name": "cube", "id": [1]}
+        ]
+}
