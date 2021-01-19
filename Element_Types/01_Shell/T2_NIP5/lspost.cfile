@@ -1,0 +1,6 @@
+$# LS-PrePost command file created by LS-PrePost(R) V4.7.22 -28Dec2020 -64bit-Window
+$# Created on Jan-19-2021 (11:00:05)
+open d3plot "D:\Masterstudium_Maschinenbau_TU-Graz\3\FE-Hochdynamische\03_Element_Types-20210119\Element_Types\01_Shell\T2_NIP5\d3plot"
+ac
+anim forward
+open d3plot "D:\Masterstudium_Maschinenbau_TU-Graz\3\FE-Hochdynamische\03_Element_Types-20210119\Element_Types\01_Shell\T3_NIP5\d3plot"

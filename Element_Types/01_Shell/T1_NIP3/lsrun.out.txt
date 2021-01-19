@@ -1,0 +1,179 @@
+ License option : check network license only
+      Date: 01/19/2021      Time: 10:56:06  
+
+     ___________________________________________________
+     |                                                 |
+     |  Livermore  Software  Technology  Corporation   |
+     |                                                 |
+     |  7374 Las Positas Road                          |
+     |  Livermore, CA 94551                            |
+     |  Tel: (925) 449-2500  Fax: (925) 449-2507       |
+     |  www.lstc.com                                   |
+     |_________________________________________________|
+     |                                                 |
+     |  LS-DYNA, A Program for Nonlinear Dynamic       |
+     |  Analysis of Structures in Three Dimensions     |
+     |  Version : smp s R10.1.0   Date: 01/12/2018     |
+     |  Revision: 123264          Time: 16:34:46       |
+     |                                                 |
+     |  Features enabled in this version:              |
+     |    Shared Memory Parallel                       |
+     |    FFTW (multi-dimensional FFTW Library)        |
+     |    Interactive Graphics                         |
+     |    ANSYS Database format                        |
+     |    ANSYS License (ANSYS150)                     |
+     |    MADYMO indirect coupling (7.2 or higher)     |
+     |                                                 |
+     |  Licensed to: Technische Universitaet Graz      |
+     |  Issued by  : dynamore_01072021                 |
+     |                                                 |
+     |  Platform   : WINDOWS X64 (SSE2)                |
+     |  OS Level   : Windows 7/8/10 & Srv 2008/2012 R2 |
+     |  Compiler   : Intel Fortran 13.1 & MSVC++ 2010  |
+     |  Hostname   : Ahmed-PC                          |
+     |  Precision  : Single precision (I4R4)           |
+     |  SVN Version: 122905                            |
+     |                                                 |
+     |  Unauthorized use infringes LSTC copyrights     |
+     |_________________________________________________|
+
+
+ Executing with LSTC network license
+
+ Input file: D:\Masterstudium_Maschinenbau_TU-Graz\3\FE-Hochdynamische\03_Element_Types-20210
+
+ The native file format       : 32-bit small endian
+ Memory size from command line:    20000000
+
+ on UNIX computers note the following change:
+
+ ctrl-c interrupts ls-dyna and prompts for a sense  switch.
+ type the desired sense switch: sw1., sw2., etc. to continue
+ the execution.  ls-dyna will respond as explained in the users manual
+
+    type                      response
+   -----   ------------------------------------------------------------
+   quit    ls-dyna terminates.
+   stop    ls-dyna terminates.
+   sw1.    a restart file is written and ls-dyna terminates.
+   sw2.    ls-dyna responds with time and cycle numbers.    
+   sw3.    a restart file is written and ls-dyna continues calculations.
+   sw4.    a plot state is written and ls-dyna continues calculations.
+   lpri    toggle implicit lin. alg. solver output on/off.
+   nlpr    toggle implicit nonlinear solver output on/off.
+   iter    toggle implicit output to d3iter database on/off.
+   prof    output timing data to messag and continue.
+   conv    force implicit nonlinear convergence for current time step.
+   ttrm    terminate implicit time step, reduce time step, retry time step.
+   rtrm    terminate implicit at end of current time step.
+
+
+ ********  notice  ********  notice  ********  notice  ********
+ *                                                            *
+ * This is the LS-DYNA Finite Element code.                   *
+ *                                                            *
+ * Neither LSTC nor the authors assume any responsibility for *
+ * the validity, accuracy, or applicability of any results    *
+ * obtained from this system. Users must verify their own     *
+ * results.                                                   *
+ *                                                            *
+ * LSTC endeavors to make the LS-DYNA code as complete,       *
+ * accurate and easy to use as possible.                      *
+ * Suggestions and comments are welcomed.  Please report any  *
+ * errors encountered in either the documentation or results  *
+ * immediately to LSTC through your site focus.               *
+ *                                                            *
+ * Copyright (C) 1990-2018                                    *
+ * by Livermore Software Technology Corp. (LSTC)              *
+ * All rights reserved                                        *
+ *                                                            *
+ ********  notice  ********  notice  ********  notice  ********
+
+ Beginning of keyword reader                                   01/19/21 10:56:07
+
+ Memory required to process keyword     :      287166 
+
+ input of data is completed
+
+ initial kinetic energy = 0.00000000E+00
+
+ Memory required to begin solution      :     288K
+ Additional dynamically allocated memory:      65K
+                                   Total:     352K
+
+ initialization completed
+       1 t 0.0000E+00 dt 1.65E-03 flush i/o buffers            01/19/21 10:56:07
+       1 t 0.0000E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+ cpu time per zone cycle............         0 nanoseconds
+ average cpu time per zone cycle....         0 nanoseconds
+ average clock time per zone cycle..      4040 nanoseconds
+
+ estimated total cpu time          =         1 sec (       0 hrs  0 mins)
+ estimated cpu time to complete    =         0 sec (       0 hrs  0 mins)
+ estimated total clock time        =         3 sec (       0 hrs  0 mins)
+ estimated clock time to complete  =         2 sec (       0 hrs  0 mins)
+ termination time                  = 1.000E+01
+     605 t 9.9940E-01 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+    1209 t 1.9988E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+    1814 t 2.9998E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+    2418 t 3.9992E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+    3022 t 4.9986E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:07
+    3627 t 5.9996E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+    4231 t 6.9990E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+    4836 t 8.0000E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+    5000 t 8.2713E+00 dt 1.65E-03 flush i/o buffers            01/19/21 10:56:08
+    5440 t 8.9993E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+    6044 t 9.9986E+00 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+ 
+ *** termination time reached ***
+    6044 t 1.0000E+01 dt 1.65E-03 write d3dump01 file          01/19/21 10:56:08
+    6044 t 1.0000E+01 dt 1.65E-03 write d3plot file            01/19/21 10:56:08
+
+ N o r m a l    t e r m i n a t i o n                          01/19/21 10:56:08
+
+ Memory required to complete solution   :     288K
+ Additional dynamically allocated memory:      70K
+                                   Total:     357K
+
+ T i m i n g   i n f o r m a t i o n
+                        CPU(seconds)   %CPU  Clock(seconds) %Clock
+  ----------------------------------------------------------------
+  Keyword Processing ... 0.0000E+00    0.00     5.4000E-02    2.39
+    KW Reading ......... 0.0000E+00    0.00     4.0000E-03    0.18
+    KW Writing ......... 0.0000E+00    0.00     6.0000E-03    0.27
+  Initialization ....... 1.0000E+00   50.00     1.5270E+00   67.48
+    Init Proc Phase 1 .. 0.0000E+00    0.00     1.6000E-02    0.71
+    Init Proc Phase 2 .. 0.0000E+00    0.00     2.0000E-03    0.09
+  Element processing ... 1.0000E+00   50.00     2.8500E-01   12.59
+    Shells ............. 1.0000E+00   50.00     2.6100E-01   11.53
+    ISO Shells ......... 0.0000E+00    0.00     1.0000E-03    0.04
+  Binary databases ..... 0.0000E+00    0.00     6.0000E-03    0.27
+  ASCII database ....... 0.0000E+00    0.00     6.1000E-02    2.70
+  Contact algorithm .... 0.0000E+00    0.00     1.0000E-02    0.44
+  Rigid Bodies ......... 0.0000E+00    0.00     1.0000E-02    0.44
+  Time step size ....... 0.0000E+00    0.00     9.0000E-03    0.40
+  Rigid wall ........... 0.0000E+00    0.00     1.0000E-03    0.04
+  Group force file ..... 0.0000E+00    0.00     2.0000E-03    0.09
+  Others ............... 0.0000E+00    0.00     1.7000E-02    0.75
+  Misc. 1 .............. 0.0000E+00    0.00     8.8000E-02    3.89
+  Misc. 2 .............. 0.0000E+00    0.00     8.9000E-02    3.93
+  Misc. 3 .............. 0.0000E+00    0.00     5.1000E-02    2.25
+  Misc. 4 .............. 0.0000E+00    0.00     5.3000E-02    2.34
+  ----------------------------------------------------------------
+  T o t a l s            2.0000E+00  100.00     2.2630E+00  100.00
+
+ Problem time       =    1.0000E+01
+ Problem cycle      =      6044
+ Total CPU time     =         2 seconds (   0 hours  0 minutes  2 seconds)
+ CPU time per zone cycle  =       1838.370 nanoseconds
+ Clock time per zone cycle=       1253.769 nanoseconds
+
+ Number of CPU's    1
+ NLQ used/max     136/  136
+ Start time   01/19/2021 10:56:07  
+ End time     01/19/2021 10:56:08  
+ Elapsed time       1 second  for    6044 cycles using  1 SMP thread 
+             (      0 hour   0 minute   1 second )
+
+ N o r m a l    t e r m i n a t i o n                          01/19/21 10:56:08
+
