@@ -1,0 +1,6 @@
+{
+	"OBJECTS": [
+			{"type": "ENERGY_GLOBAL", "name": "Model", "id": [0]},
+			{"type": "NODE", "name": "moving_node", "id": [6]}
+        ]
+}
