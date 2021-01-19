@@ -5,4 +5,4 @@ dependencies:
   - numpy
   - matplotlib
   - pip:
-    - dynasaur
+    - dynasaur==1.3.15
